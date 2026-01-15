@@ -1,0 +1,55 @@
+{
+  "name": "n8n-nodes-linkedinoutreach",
+  "version": "0.1.0",
+  "description": "LinkedIn Outreach by Boost.space",
+  "keywords": [
+    "n8n-community-node-package"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "author": {
+    "name": "Alexandru Nemes",
+    "email": "anemes@makeitfuture.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anemesMakeitfuture/n8n-nodes-linkedinoutreach"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials package.json",
+    "lintfix": "eslint nodes credentials package.json --fix"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/LinkedinOutreachCredentialsApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/LinkedinOutreach/LinkedinOutreach.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/form-data": "^2.5.2",
+    "@types/node": "^22.15.17",
+    "@typescript-eslint/parser": "^7.15.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-n8n-nodes-base": "^1.16.1",
+    "gulp": "^4.0.2",
+    "prettier": "^3.3.2",
+    "typescript": "^5.5.3"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "dependencies": {
+    "form-data": "^4.0.2",
+    "request": "^2.88.2"
+  }
+}

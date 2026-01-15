@@ -1,0 +1,20 @@
+{
+	"node": "n8n-nodes-base.linkedinOutreach",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": [
+		"Miscellaneous"
+	],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://developer.unipile.com/docs/connect-accounts#google-chrome-extension-case"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://developer.unipile.com/docs/getting-started"
+			}
+		]
+	}
+}
