@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/anemesMakeitfuture/n8n-nodes-linkedinoutreach"
+    "url": "https://github.com/makeitfutureDev/n8n-nodes-linkedinoutreach"
   },
   "main": "index.js",
   "scripts": {
@@ -36,7 +36,6 @@
     ]
   },
   "devDependencies": {
-    "@types/form-data": "^2.5.2",
     "@types/node": "^22.15.17",
     "@typescript-eslint/parser": "^7.15.0",
     "eslint": "^8.56.0",
@@ -47,9 +46,5 @@
   },
   "peerDependencies": {
     "n8n-workflow": "*"
-  },
-  "dependencies": {
-    "form-data": "^4.0.2",
-    "request": "^2.88.2"
   }
 }
