@@ -8,6 +8,7 @@ import {
 	INodeType,
 	INodeTypeDescription,
 	NodeApiError,
+	NodeConnectionTypes,
 } from 'n8n-workflow';
 import { userFields, userOperations } from './descriptions/UserDescription';
 import { messageFields, messageOperations } from './descriptions/MessageDescription';
@@ -24,8 +25,8 @@ export class LinkedinOutreach implements INodeType {
 		defaults: {
 			name: 'LinkedIn Outreach by Boost.space',
 		},
-		inputs: ['main'],
-		outputs: ['main'],
+		inputs: [NodeConnectionTypes.Main],
+		outputs: [NodeConnectionTypes.Main],
 		credentials: [
 	{
 		name: 'linkedinOutreachCredentialsApi',
